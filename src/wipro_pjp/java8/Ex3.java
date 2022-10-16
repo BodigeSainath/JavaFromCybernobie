@@ -2,6 +2,7 @@ package wipro_pjp.java8;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Date;
@@ -15,12 +16,12 @@ public static void main(String[] args) {
       System.out.println("Enter check-in date (gg/aa/yy):");
       String cinput = input.nextLine();
       if(null != cinput && cinput.trim().length() > 0){
-           try {
-			date1 = format.p
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//           try {
+//			date1 = format.parse(DayOfWeek.FRIDAY);
+//		} catch (ParseException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
       }
 	//LocalDate joiningDate = LocalDate.of(2015,5,5);
 	Period d = Period.between(date1,LocalDate.now());
